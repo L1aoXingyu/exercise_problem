@@ -206,19 +206,29 @@
    
    把 $e_j^T (m - x_i) = -\alpha_{ij}$带入(7)
    $$
-   \begin{align}
-   L &= \sum_{i=1}^n \sum_{j=1}^{d'} \alpha_{ij}^2 -2 \sum_{i=1}^n \sum_{j=1}^{d'}\alpha_{ij}^2 + \sum_{i=1}^n(m-x_i)^T(m-x_i) \\
-   &= -\sum_{i=1}^n\sum_{j=1}^{d'}\alpha_{ij}^2 + C
-   \end{align}
+   L = \sum_{i=1}^n \sum_{j=1}^{d'} \alpha_{ij}^2 -2 \sum_{i=1}^n \sum_{j=1}^{d'}\alpha_{ij}^2 + \sum_{i=1}^n(m-x_i)^T(m-x_i)
    $$
+   $$
+   = -\sum_{i=1}^n\sum_{j=1}^{d'}\alpha_{ij}^2 + C
+   $$
+   
+   
+   
    下面将 $\alpha_{ij}$ 的表达式带入(9)
    $$
-   \begin{align}
-   L &= -\sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(e_j^T(x_i - m))^T + C \\
-   & = - \sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(x_i - m)^T e_j + C \\
-   &= - \sum_{j=1}^{d'}e_j^T (\sum_{i=1}^n(x_i -m)(x_i - m)^T) e_j + C
-   \end{align}
+   L = -\sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(e_j^T(x_i - m))^T + C 
+   
    $$
+   $$
+   = - \sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(x_i - m)^T e_j + C 
+   $$
+   
+   $$
+   = - \sum_{j=1}^{d'}e_j^T (\sum_{i=1}^n(x_i -m)(x_i - m)^T) e_j + C
+   $$
+   
+   
+   
    令$\sum_{i=1}^n(x_i - m)(x_i - m)^T = S$，W 是有 $e_i$ 为列向量构成的 $n \times d'$ 的矩阵, 所以最后优化的目标是
    $$
    \min_{W} -tr(W^T S W) \\
