@@ -208,19 +208,18 @@
    $$
    L = \sum_{i=1}^n \sum_{j=1}^{d'} \alpha_{ij}^2 -2 \sum_{i=1}^n \sum_{j=1}^{d'}\alpha_{ij}^2 + \sum_{i=1}^n(m-x_i)^T(m-x_i)
    $$
+   
    $$
    = -\sum_{i=1}^n\sum_{j=1}^{d'}\alpha_{ij}^2 + C
    $$
    
    
-   
    下面将 $\alpha_{ij}$ 的表达式带入(9)
    $$
-   L = -\sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(e_j^T(x_i - m))^T + C 
-   
+   L = -\sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(e_j^T(x_i - m))^T + C
    $$
    $$
-   = - \sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(x_i - m)^T e_j + C 
+   = - \sum_{i=1}^n\sum_{j=1}^{d'}e_j^T(x_i - m)(x_i - m)^T e_j + C
    $$
    
    $$
